@@ -1,0 +1,9 @@
+
+
+I had problem with scm-pipeline in my jenkins
+I think the problem is that I installed jenkins as a container
+and as I need to build and run docker inside, I shared host docker
+
+I think installing jenkins outside container solves every thins easier
+and prevent re-downloading maven-packages
+

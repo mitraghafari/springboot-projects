@@ -1,0 +1,14 @@
+
+  good source:https://hellokoding.com/spring-boot-tutorial-series/
+
+- add redis to viewService 
+
+- check kafka with 2-3 broker, topic partion, customer group (outside app)
+
+- add log center
+
+- check actuator
+
+- add connections between services (config, discovery)
+
+

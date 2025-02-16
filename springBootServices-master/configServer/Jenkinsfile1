@@ -1,0 +1,34 @@
+pipeline {
+ agent { label 'dockerserver' }        
+ environment {
+
+                dpath = sh(returnStdout: true, script: 'pwd')
+                        }
+      stages{
+        stage('package'){
+            steps {
+                sh  'mvn clean package --file configServer/pom.xml'
+                sh 'echo ${dpath}'
+            }
+        }
+        stage('run'){
+            
+            agent{
+                dockerfile {
+        		    filename 'Dockerfile1' // optional because file name is standars
+                    dir 'configServer' //if dockerfile is not in root
+                    additionalBuildArgs  '--build-arg path=${dpath}'
+        		    args '-t my-config-server'
+                    customWorkspace "${dpath}"
+                    label 'dockerserver'  
+                }
+            }
+            steps{
+             //   sh 'docker build -t my-config-server:1.0 -f ./configServer/Dockerfile .'
+                sh 'echo End of running configServer'
+
+            }
+
+        }
+    }
+}

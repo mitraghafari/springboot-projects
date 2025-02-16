@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/springBootServices-master/configServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springBootServices-master/eurekaServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springBootServices-master/myKafka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springBootServices-master/myMvcMongo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springBootServices-master/myRestRepoMySql/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springBootServices-master/myRestRepoOracle/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springBootServices-master/viewWithSecurity/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springBootServices-master/zuulGateWay/src/main/java" charset="UTF-8" />
+  </component>
+</project>
